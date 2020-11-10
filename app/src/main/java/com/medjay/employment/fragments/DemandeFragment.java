@@ -1,6 +1,7 @@
 package com.medjay.employment.fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -13,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
+import com.medjay.employment.CategoryActivity;
 import com.medjay.employment.R;
 import com.medjay.employment.adapters.CategoryGrid;
 import com.medjay.employment.models.Category;
@@ -34,18 +36,14 @@ public class DemandeFragment extends Fragment {
 
         final List<Category> mCatregories = new ArrayList<>();
 
-        mCatregories.add(new Category(R.drawable.logo,"maison"));
-        mCatregories.add(new Category(R.drawable.logo,"voitures"));
-        mCatregories.add(new Category(R.drawable.logo,"fetes"));
-        mCatregories.add(new Category(R.drawable.logo,"etudes"));
-        mCatregories.add(new Category(R.drawable.logo,"restoration"));
+        mCatregories.add(new Category(R.drawable.logo,"Maison"));
 
         gridView.setAdapter(new CategoryGrid(getActivity(),getContext(),mCatregories));
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                Toasty.success(getContext(),mCatregories.get(i).getName(),Toasty.LENGTH_LONG).show();
+                getActivity().startActivity(new Intent(getActivity(), CategoryActivity.class));
 
             }
         });

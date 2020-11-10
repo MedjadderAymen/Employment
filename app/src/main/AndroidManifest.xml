@@ -3,27 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.medjay.employment">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:requestLegacyExternalStorage="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-
-        <activity android:name=".HomeActivity">
-
-        </activity>
-
-        <activity android:name=".ConnxionActivity">
-
-        </activity>
+        <activity android:name=".PresServActivity"></activity>
+        <activity android:name=".CategoryQuestionActivity" />
+        <activity android:name=".CategoryActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".ConnxionActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -19,7 +19,7 @@ public class ConnxionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_connxion);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content,new SignUpFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content,new SignInFragment()).commit();
 
     }
 

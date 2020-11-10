@@ -94,6 +94,7 @@
              app:layout_constraintVertical_bias="0.05">
 
              <EditText
+                 android:id="@+id/first_name"
                  android:layout_width="match_parent"
                  android:layout_height="36dp"
                  android:layout_margin="8dp"
@@ -132,6 +133,7 @@
              app:layout_constraintVertical_bias="0.05">
 
              <EditText
+                 android:id="@+id/last_name"
                  android:layout_width="match_parent"
                  android:layout_height="36dp"
                  android:layout_margin="8dp"
@@ -170,6 +172,7 @@
              app:layout_constraintVertical_bias="0.05">
 
              <EditText
+                 android:id="@+id/email"
                  android:layout_width="match_parent"
                  android:layout_height="36dp"
                  android:layout_margin="8dp"
@@ -208,6 +211,7 @@
              app:layout_constraintVertical_bias="0.05">
 
              <EditText
+                 android:id="@+id/password"
                  android:layout_width="match_parent"
                  android:layout_height="36dp"
                  android:layout_margin="8dp"
@@ -275,6 +279,7 @@
                  android:textStyle="bold" />
 
              <TextView
+                 android:id="@+id/toSignIn1"
                  android:layout_width="wrap_content"
                  android:layout_height="45dp"
                  android:fontFamily="@font/baloo"
@@ -289,8 +294,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/step2"
-        android:layout_width="match_parent"
         android:visibility="gone"
+        android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
@@ -343,13 +348,14 @@
             app:layout_constraintVertical_bias="0.05">
 
             <EditText
+                android:id="@+id/birth_date"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
                 android:layout_margin="8dp"
                 android:background="@null"
                 android:fontFamily="@font/baloo"
                 android:hint="Birth date"
-                android:inputType="textPersonName"
+                android:inputType="date"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white_hint"
                 android:textSize="20sp"
@@ -381,6 +387,7 @@
             app:layout_constraintVertical_bias="0.05">
 
             <EditText
+                android:id="@+id/card_number"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
                 android:layout_margin="8dp"
@@ -388,7 +395,7 @@
                 android:fontFamily="@font/baloo"
                 android:hint="ID card number"
                 android:textColor="@color/white"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:textColorHint="@color/white_hint"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -419,6 +426,7 @@
             app:layout_constraintVertical_bias="0.05">
 
             <EditText
+                android:id="@+id/phone_number"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
                 android:layout_margin="8dp"
@@ -426,7 +434,7 @@
                 android:fontFamily="@font/baloo"
                 android:hint="Phone number"
                 android:textColor="@color/white"
-                android:inputType="textEmailAddress"
+                android:inputType="phone"
                 android:textColorHint="@color/white_hint"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -457,14 +465,15 @@
             app:layout_constraintVertical_bias="0.05">
 
             <EditText
+                android:id="@+id/address"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
                 android:layout_margin="8dp"
                 android:background="@null"
                 android:fontFamily="@font/baloo"
-                android:hint="Address"
+                android:hint="City"
                 android:textColor="@color/white"
-                android:inputType="textPassword"
+                android:inputType="text"
                 android:textColorHint="@color/white_hint"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -495,6 +504,7 @@
             app:layout_constraintVertical_bias="0.05">
 
             <EditText
+                android:id="@+id/postal_code"
                 android:layout_width="match_parent"
                 android:layout_height="36dp"
                 android:layout_margin="8dp"
@@ -502,7 +512,7 @@
                 android:fontFamily="@font/baloo"
                 android:hint="Postal code"
                 android:textColor="@color/white"
-                android:inputType="textPassword"
+                android:inputType="number"
                 android:textColorHint="@color/white_hint"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -562,6 +572,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/toSignIn2"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:fontFamily="@font/baloo"
@@ -711,6 +722,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/toSignIn3"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:fontFamily="@font/baloo"

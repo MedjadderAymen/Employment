@@ -68,13 +68,5 @@ public class HomeActivity extends AppCompatActivity {
 
             }
         });
-
-        /*HashMap<String, String> map = new HashMap<>();
-        map.put("description", "description");
-        map.put("place", "place 2");
-        map.put("time", "2020-02-13");
-
-        WebService service= RetrofitBuilder.getRetrofitInstance().create(WebService.class);
-        Call<JsonObject> call=service.register()*/
     }
 }

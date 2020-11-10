@@ -18,8 +18,8 @@ public interface WebService {
 
     @POST("register")
     @Multipart
-    Call<JsonObject> register(@PartMap() Map<String, String> partMap,
-                        @Part MultipartBody.Part avatar);
+    Call<AccessToken> register(@PartMap() Map<String, String> partMap,
+                              @Part MultipartBody.Part avatar);
 
     @POST("login")
     @FormUrlEncoded
