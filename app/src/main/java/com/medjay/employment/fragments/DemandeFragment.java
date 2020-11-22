@@ -39,8 +39,6 @@ public class DemandeFragment extends Fragment {
         mCatregories.add(new Category(R.drawable.logo,"Maison"));
         mCatregories.add(new Category(R.drawable.logo,"Transport et démenagement"));
         mCatregories.add(new Category(R.drawable.logo,"Jardins et extérieur"));
-        mCatregories.add(new Category(R.drawable.logo,"Maison"));
-        mCatregories.add(new Category(R.drawable.logo,"Maison"));
 
         gridView.setAdapter(new CategoryGrid(getActivity(),getContext(),mCatregories));
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

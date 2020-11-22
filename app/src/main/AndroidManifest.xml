@@ -18,6 +18,8 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".BlueToothActivity">
@@ -25,14 +27,15 @@
         <activity android:name=".PresServActivity" />
         <activity android:name=".CategoryQuestionActivity" />
         <activity android:name=".CategoryActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".ConnxionActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".HomeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".ConnxionActivity" />
+        <activity android:name=".SplashActivity">
         </activity>
 
         <meta-data
