@@ -37,13 +37,21 @@ public class DemandeFragment extends Fragment {
         final List<Category> mCatregories = new ArrayList<>();
 
         mCatregories.add(new Category(R.drawable.logo,"Maison"));
+        mCatregories.add(new Category(R.drawable.logo,"Transport et démenagement"));
+        mCatregories.add(new Category(R.drawable.logo,"Jardins et extérieur"));
+        mCatregories.add(new Category(R.drawable.logo,"Maison"));
+        mCatregories.add(new Category(R.drawable.logo,"Maison"));
 
         gridView.setAdapter(new CategoryGrid(getActivity(),getContext(),mCatregories));
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                getActivity().startActivity(new Intent(getActivity(), CategoryActivity.class));
+                Bundle bundle = new Bundle();
+                bundle.putString("Demande",mCatregories.get(i).getName());
+
+
+                getActivity().startActivity(new Intent(getActivity(), CategoryActivity.class).putExtras(bundle));
 
             }
         });

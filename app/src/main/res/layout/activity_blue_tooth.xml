@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".BlueToothActivity">
+
+    <TextView
+        android:id="@+id/bluetoothStatusTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        tools:text="bluetooth status"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/bluetoothIcon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+    <Button
+        android:id="@+id/onButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="turn On"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+    <Button
+        android:id="@+id/offButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="turn off"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+    <Button
+        android:id="@+id/discoverButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="discover"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+    <Button
+        android:id="@+id/pairedButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="get paired"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+    <TextView
+        android:id="@+id/pairedTv"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        tools:text="paired device"/>
+
+</LinearLayout>
