@@ -27,9 +27,8 @@
         <activity android:name=".PresServActivity" />
         <activity android:name=".CategoryQuestionActivity" />
         <activity android:name=".CategoryActivity" />
-        <activity android:name=".HomeActivity" >
+        <activity android:name=".HomeActivity" />
 
-        </activity>
         <activity android:name=".ConnxionActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
